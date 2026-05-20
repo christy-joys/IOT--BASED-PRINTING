@@ -1,0 +1,8 @@
+{
+  "name": "SmartPrint Pi Kiosk",
+  "description": "A high-end photo printing kiosk application designed for Raspberry Pi. It handles secure image uploads, Razorpay payment processing via QR codes, and provides a seamless interface for triggering local printer hardware.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": []
+}
