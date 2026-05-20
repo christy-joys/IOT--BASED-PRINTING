@@ -1,0 +1,19 @@
+printpro---digital-printing-hub/src/components/OrderFlow.tsx
+@@ -111,7 +111,7 @@ export const OrderFlow = ({ onBack }: { onBack: () => void }) => {
+  };
+
+  const calculateTotal = () => {
+    let base = config.mode === 'COLOR' ? 10 : 2;
+    let base = config.mode === 'COLOR' ? 10 : 1;
+    if (config.size === 'A3') base *= 2;
+
+    const pagesToPrint = config.range === 'ALL' 
+@@ -123,7 +123,7 @@ export const OrderFlow = ({ onBack }: { onBack: () => void }) => {
+const handlePayment = async () => {
+    if (!file) { alert("Please select a file first"); return; }
+
+    const BACKEND_URL = "https://nonfraudulently-nonreigning-laquita.ngrok-free.dev;"
+    const BACKEND_URL = "https://devona-racemic-stephani.ngrok-free.dev;"
+
+    try {
+      // 1. Tell the Pi to create a Razorpay Order
